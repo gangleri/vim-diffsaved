@@ -11,6 +11,7 @@ function! VDiffSaved()
 endfunction
 
 let s:last_saved_diff_open=0
+
 function! ToggleVDiffSaved()
   if (s:last_saved_diff_open == 1)
     let s:last_saved_diff_open=0
@@ -31,6 +32,5 @@ command! VDiffSaved
 command! ToggleVDiffSaved
   \ call ToggleVDiffSaved()  
 
-" key mapping
-nmap <silent><leader>ds ToggleDiffSaved<cr>
+nnoremap <leader>ds :ToggleVDiffSaved<cr>
 
