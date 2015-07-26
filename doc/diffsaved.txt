@@ -33,27 +33,16 @@ vimdiff to give a side by side comparison |VDiffSaved|.
 =====================================================
 2. Usage                             *DiffSavedUsage*
 
-*DiffSaved* - Provides simple text output listing the
-lines that have changed since the last write.
-
-Example:
-
-
-*VDiffSaved* - Visual comparison of the contents of the
+*DiffSaved* - Visual comparison of the contents of the
 buffer and what was last saved. It uses |vimdiff| to
 give a side by comparison and allows you to undo part
 or all of your changes.
-
-*ToggleVDiffSaved* - Helper that will show/hide 
-|VDiffSaved| comparison.
-
 
 =====================================================
 3. Mapings                         *DiffSaveMappings*
 
 <leader>ds - Pressing leader ds in normal mode will
-by default will toggle VDiffSaved. you are free to 
-remap this in your vimrc.
-
+by display the comparison of the current buffer and
+the contents of the file.
 
 =====================================================
